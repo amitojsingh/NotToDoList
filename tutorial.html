@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Not to-do Tutorial</title>
+      <link href="css/main.css" rel="stylesheet" type="text/css">
+      <script>
+          window.onload=function(){
+          var heading=document.createElement("h1");
+              var para=document.createElement("p");
+              para.innerText="It' is important to make Not ToDo List in order to avoid Todo list from getting pilled up It's what will help us stay organised";
+          heading.innerText="How to use Not-Todo List";
+              var todo=["Stay present", "Be vulnerable", "Drink Only lemon water","Say hello to everyone", "Get 7 hours sleep"];
+              var notodo=["Don't avoid eye contact","Don't be late", "Don't set Expecatoins", "Don't eat sugar", "Don't drink beer"]; 
+              var unorder=document.createElement("ul");
+              var unorder2=document.createElement("ul");
+              var checkbox=document.createElement("input");
+              checkbox.type="checkbox";
+              
+              for (let i=0;i<todo.length;i++){
+                  var list=document.createElement("li");
+                  console.log(todo[i]);
+                  list.append(checkbox);
+                  list.innerText=todo[i];
+                   unorder.append(list);
+              }
+                for (let i=0;i<notodo.length;i++){
+                  var list=document.createElement("li");
+                  console.log(notodo[i]);
+                    list.append(checkbox);
+                  list.innerText=notodo[i];
+                   unorder2.append(list);
+              }
+             
+              var todo1=document.getElementById("sample-todo");
+              var notodo1=document.getElementById("sample-not-todo");
+              var sublist=document.getElementById("sub-lists");
+              
+          
+          var mainbody=document.getElementById("content");
+          mainbody.append(heading);
+              mainbody.append(para);
+              mainbody.append(sublist);
+              notodo1.append(unorder2);
+                  todo1.append(unorder);
+          }
+      </script>
+  </head>
+  <body>
+      
+            <header>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="input.html">List</a></li>
+                  <li><a href="setting.html">Themes</a></li>
+                  <li><a href="tutorial.html">Tutorial</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <div id="content">
+              <div id="sub-lists">
+                  <div id="sample-todo">
+                      <h3>Sample todo list</h3>
+                  </div>
+                  <div id="sample-not-todo">
+                      <h3>Sample Not To Do list</h3>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </body>
+    <footer>Copyright &copy; Amitoj Singh, Gaganpreet kaur, Prince</footer>
+</html>

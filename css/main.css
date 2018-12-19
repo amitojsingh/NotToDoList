@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald');
+.text-wrapper,.image-wrapper{
+    width:50%;
+}
+.image-wrapper img{
+    width:60%;
+}
+.wrapper{
+    margin:5em;
+    display:flex;
+}
+
+.text-wrapper h1{
+    font-family:'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    text-align:left;
+}
+
+.text-wrapper p{
+    font-family:'Lato',sans-serif;
+    line-height: 1.5;
+    justify-content:center;
+    width:70%;
+    font-size:1.4em;
+    color:#636e72;
+    text-align: left;
+}
+.text-wrapper a{
+    text-decoration: none;
+    color:#fff;
+    background-color:#2ecc71;
+    padding:.5em;
+    font-size:1.2em;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+header a:hover{
+    color:#d35400;
+}
+header a{
+    text-decoration: none;
+    font-size:1.5em;
+    color:#636e72;
+    margin:10px;
+}
+header{
+    text-align: center;
+}
+main{
+    margin-top:3em;
+    text-align:center;
+    font-family: 'lato',sans-serif;
+    height:500px;
+}
+footer{
+    text-align: center;
+    font-size:.7em;
+}
+input[type=text]{
+    font-size:2em;
+    border:none;
+    padding:0.3em;
+}
+input[type=submit]{
+    font-size:1.5em;
+    padding:10px;   
+    background-color:#fff;;
+    color:#2ecc71;
+    border:none;
+    border:2px solid #2ecc71;
+}
+
+#display li{
+    font-size:1.5em;
+    width:50%;
+    text-align: left;
+    margin:auto;
+    margin-top:20px;
+}
+input[type=checkbox]{
+    margin:20px;
+    margin-bottom: 0;
+}
+.dark{
+    background-color:#000;
+}
+.dark a{
+    color:#fff;
+}
+.dark li{
+    color:#fff;
+}
+.dark footer{
+    color:#fff;
+}
+.dark input[type=text]{
+    background-color:#000;
+    color:#fff;
+}
+.dark input[type=submit]{
+    background-color:#000;
+}
+
+#themes-wrapper{
+    display:flex;
+    box-sizing: border-box;
+    background-color:#ecf0f1;
+}
+#themes-wrapper a{
+    width:50%;
+    margin:20px;
+}
+#themes-wrapper img{
+    width:100%;
+}
+#sub-lists{
+    display:flex;
+}
+#sample-todo{
+    background-color:#ecf0f1;
+    Width:50%;
+    border:10px solid #fff;
+}
+#sample-todo li,#sample-not-todo li{
+    margin:10px;
+}
+#sample-not-todo{
+    background-color:#ecf0f1;
+    width:50%;
+    border:5px solid #fff;
+}

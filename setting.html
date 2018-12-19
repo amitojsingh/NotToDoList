@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Not to-do Themes</title>
+      <link href="css/main.css" rel="stylesheet" type="text/css">
+      <script>
+          var dark=function(){
+                localStorage.setItem("theme","dark");
+            }
+
+          var light=function(){
+                localStorage.setItem("theme","light");
+            }
+      </script>
+  </head>
+  <body>
+            <header>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="input.html">List</a></li>
+                  <li><a href="display.html">Themes</a></li>
+                  <li><a href="tutorial.html">Tutorial</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+      <div id="themes-wrapper">
+          <a href="input.html" onclick="dark();"><img src="images/dark.png"></a>
+          <a href="input.html" onclick="light();"><img src="images/light.png"></a>
+      </div>
+      </main>
+  </body>
+    <footer>Copyright &copy; Amitoj Singh, Gaganpreet kaur, Prince</footer>
+</html>
